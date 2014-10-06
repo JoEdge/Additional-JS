@@ -24,7 +24,7 @@ function maxOfThree(x,y,z) {
 //Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
 
 function vowel(z) {
-   if ('z' === 'a' || 'z'=== 'e' || 'z' === 'i' || 'z' === 'o' || 'z' === 'u') {
+   if (z === 'a' || z === 'e' || z === 'i' || z === 'o' || z === 'u') {
      return "true";
    } else
      return "false";
@@ -32,15 +32,15 @@ function vowel(z) {
 
 //Write a function translate() that will translate a text into "rövarspråket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
 
-var vowels = ['a', 'e', 'i', 'o', 'u'];
+/*var vowels = ['a', 'e', 'i', 'o', 'u'];
+var phrase = "this is fun";
+var letters = phrase.split("");
 
-function translate(letter){
+var translate = function() {
+  if (letters != vowels)
 
-  if (letter === vowels){
+};*/
 
-  }
-
-};
 
 //Define a function sum() and a function multiply() that sums and multiplies (respectively) all the numbers in an array of numbers. For example, sum([1,2,3,4]) should return 10, and multiply([1,2,3,4]) should return 24.
 
@@ -58,10 +58,17 @@ var multiply = multNum.reduce(function (a,b){
     return a * b;
 });
 
-
 //Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
 
+function reverse (p){
+  return p.split('').reverse().join('');
+};
+
+
 //Represent a small bilingual lexicon as a Javascript object in the following fashion {"merry":"god", "christmas":"jul", "and":"och", "happy":gott", "new":"nytt", "year":"år"} and use it to translate your Christmas cards from English into Swedish.
+
+var swedish = {"merry":"god", "christmas":"jul", "and":"och", "happy":"gott", "new":"nytt", "year":"år"};
+
 
 //Write a function findLongestWord() that takes an array of words and returns the length of the longest one.
 
