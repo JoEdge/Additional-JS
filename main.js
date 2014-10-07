@@ -33,11 +33,9 @@ function vowel(z) {
 //Write a function translate() that will translate a text into "rövarspråket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
 
 /*var vowels = ['a', 'e', 'i', 'o', 'u'];
-var phrase = "this is fun";
-var letters = phrase.split("");
 
-var translate = function() {
-  if (letters != vowels)
+function translate (phrase) {
+  return phrase.split('');
 
 };*/
 
@@ -67,10 +65,20 @@ function reverse (p){
 
 //Represent a small bilingual lexicon as a Javascript object in the following fashion {"merry":"god", "christmas":"jul", "and":"och", "happy":gott", "new":"nytt", "year":"år"} and use it to translate your Christmas cards from English into Swedish.
 
-var swedish = {"merry":"god", "christmas":"jul", "and":"och", "happy":"gott", "new":"nytt", "year":"år"};
+var wordsToTranslate = {"merry":"god", "christmas":"jul", "and":"och", "happy":"gott", "new":"nytt", "year":"år"};
+
+
 
 
 //Write a function findLongestWord() that takes an array of words and returns the length of the longest one.
+
+var longestWord = ["Jan", "Maggie", "Kevin", "Elizabeth"];
+
+longest = longestWord.sort(function(a, b) {
+   return a.length < b.length;
+
+});
+
 
 //Write a function filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i.
 
